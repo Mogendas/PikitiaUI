@@ -7,6 +7,6 @@
 
 import Foundation
 
-struct PhotosData: Codable {
+final class PhotosData: Codable, ObservableObject {
     let photos: Photos
 }
