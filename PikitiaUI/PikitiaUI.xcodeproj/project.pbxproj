@@ -11,6 +11,10 @@
 		4CDE19CF299B80E6008190A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19CE299B80E6008190A0 /* ContentView.swift */; };
 		4CDE19D1299B80EA008190A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE19D0299B80EA008190A0 /* Assets.xcassets */; };
 		4CDE19D4299B80EA008190A0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE19D3299B80EA008190A0 /* Preview Assets.xcassets */; };
+		4CDE19DC299B8268008190A0 /* FlickrAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19DB299B8268008190A0 /* FlickrAPI.swift */; };
+		4CDE19E1299B8303008190A0 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19DE299B8303008190A0 /* Photos.swift */; };
+		4CDE19E2299B8303008190A0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19DF299B8303008190A0 /* Photo.swift */; };
+		4CDE19E3299B8303008190A0 /* PhotosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19E0299B8303008190A0 /* PhotosData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		4CDE19CE299B80E6008190A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4CDE19D0299B80EA008190A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4CDE19D3299B80EA008190A0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4CDE19DB299B8268008190A0 /* FlickrAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickrAPI.swift; sourceTree = "<group>"; };
+		4CDE19DE299B8303008190A0 /* Photos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
+		4CDE19DF299B8303008190A0 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		4CDE19E0299B8303008190A0 /* PhotosData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +59,8 @@
 		4CDE19CB299B80E6008190A0 /* PikitiaUI */ = {
 			isa = PBXGroup;
 			children = (
+				4CDE19DD299B8294008190A0 /* Models */,
+				4CDE19DA299B8246008190A0 /* Api */,
 				4CDE19CC299B80E6008190A0 /* PikitiaUIApp.swift */,
 				4CDE19CE299B80E6008190A0 /* ContentView.swift */,
 				4CDE19D0299B80EA008190A0 /* Assets.xcassets */,
@@ -65,6 +75,24 @@
 				4CDE19D3299B80EA008190A0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4CDE19DA299B8246008190A0 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				4CDE19DB299B8268008190A0 /* FlickrAPI.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		4CDE19DD299B8294008190A0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CDE19DF299B8303008190A0 /* Photo.swift */,
+				4CDE19DE299B8303008190A0 /* Photos.swift */,
+				4CDE19E0299B8303008190A0 /* PhotosData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CDE19E1299B8303008190A0 /* Photos.swift in Sources */,
+				4CDE19DC299B8268008190A0 /* FlickrAPI.swift in Sources */,
+				4CDE19E3299B8303008190A0 /* PhotosData.swift in Sources */,
 				4CDE19CF299B80E6008190A0 /* ContentView.swift in Sources */,
 				4CDE19CD299B80E6008190A0 /* PikitiaUIApp.swift in Sources */,
+				4CDE19E2299B8303008190A0 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
