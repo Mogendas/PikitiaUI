@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Photo: Codable, Identifiable, Hashable, ObservableObject {
+struct Photo: Codable, Identifiable, Hashable {
     func hash(into hasher: inout Hasher) {
       hasher.combine(id)
     }

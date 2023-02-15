@@ -17,4 +17,8 @@ final class PhotoViewModel: ObservableObject {
     var imageURLString: String {
         return photo.imageURLString
     }
+    
+    var photoTitle: String {
+        return photo.title
+    }
 }
