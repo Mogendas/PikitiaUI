@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class Photos: Codable, ObservableObject {
+struct Photos: Codable {
     let page: Int
     let pages: Int
     let perpage: Int
