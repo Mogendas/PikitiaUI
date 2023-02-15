@@ -9,7 +9,7 @@ import SwiftUI
 
 final class ContentViewModel: ObservableObject {
     @Published var photos: Photos?
-    @Published var searchString = "KnowIT"
+    @Published var searchString = ""
     
     var columns = [GridItem(.flexible()),
                    GridItem(.flexible())]
@@ -19,6 +19,7 @@ final class ContentViewModel: ObservableObject {
     }
     
     func searchPhotos() {
+        guard !searchString.isEmpty else { return }
         let api = FlickrAPI()
         
         let formattedSearchString = searchString.replacingOccurrences(of: " ", with: ",")
@@ -30,6 +31,8 @@ final class ContentViewModel: ObservableObject {
                 DispatchQueue.main.async {
                     self.photos = newPhotos
                 }
+                
+//                print("NewPhotos: \(newPhotos.photo)")
                 
             } catch {
                 print("Error: \(error)")

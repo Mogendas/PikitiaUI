@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C31A57A299D66F100BC2456 /* PhotoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C31A579299D66F100BC2456 /* PhotoViewModel.swift */; };
 		4CDE19CD299B80E6008190A0 /* PikitiaUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19CC299B80E6008190A0 /* PikitiaUIApp.swift */; };
 		4CDE19CF299B80E6008190A0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19CE299B80E6008190A0 /* ContentView.swift */; };
 		4CDE19D1299B80EA008190A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4CDE19D0299B80EA008190A0 /* Assets.xcassets */; };
@@ -16,9 +17,11 @@
 		4CDE19E2299B8303008190A0 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19DF299B8303008190A0 /* Photo.swift */; };
 		4CDE19E3299B8303008190A0 /* PhotosData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19E0299B8303008190A0 /* PhotosData.swift */; };
 		4CDE19E7299B84F1008190A0 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19E6299B84F1008190A0 /* ContentViewModel.swift */; };
+		4CDE19EE299BC0FB008190A0 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CDE19ED299BC0FB008190A0 /* PhotoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4C31A579299D66F100BC2456 /* PhotoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewModel.swift; sourceTree = "<group>"; };
 		4CDE19C9299B80E6008190A0 /* PikitiaUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PikitiaUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CDE19CC299B80E6008190A0 /* PikitiaUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PikitiaUIApp.swift; sourceTree = "<group>"; };
 		4CDE19CE299B80E6008190A0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -29,6 +32,7 @@
 		4CDE19DF299B8303008190A0 /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		4CDE19E0299B8303008190A0 /* PhotosData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosData.swift; sourceTree = "<group>"; };
 		4CDE19E6299B84F1008190A0 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		4CDE19ED299BC0FB008190A0 /* PhotoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,7 @@
 				4CDE19E5299B8490008190A0 /* ViewModels */,
 				4CDE19DD299B8294008190A0 /* Models */,
 				4CDE19DA299B8246008190A0 /* Api */,
+				4CDE19EC299BC0E7008190A0 /* Views */,
 				4CDE19E4299B848A008190A0 /* App */,
 				4CDE19D0299B80EA008190A0 /* Assets.xcassets */,
 				4CDE19D2299B80EA008190A0 /* Preview Content */,
@@ -110,8 +115,17 @@
 			isa = PBXGroup;
 			children = (
 				4CDE19E6299B84F1008190A0 /* ContentViewModel.swift */,
+				4C31A579299D66F100BC2456 /* PhotoViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4CDE19EC299BC0E7008190A0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4CDE19ED299BC0FB008190A0 /* PhotoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,8 +199,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4CDE19E1299B8303008190A0 /* Photos.swift in Sources */,
+				4CDE19EE299BC0FB008190A0 /* PhotoView.swift in Sources */,
 				4CDE19DC299B8268008190A0 /* FlickrAPI.swift in Sources */,
 				4CDE19E3299B8303008190A0 /* PhotosData.swift in Sources */,
+				4C31A57A299D66F100BC2456 /* PhotoViewModel.swift in Sources */,
 				4CDE19E7299B84F1008190A0 /* ContentViewModel.swift in Sources */,
 				4CDE19CF299B80E6008190A0 /* ContentView.swift in Sources */,
 				4CDE19CD299B80E6008190A0 /* PikitiaUIApp.swift in Sources */,
