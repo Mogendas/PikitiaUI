@@ -26,8 +26,6 @@ final class FlickrAPI {
                      URLQueryItem(name: "nojsoncallback", value: "1")]
         
         url.append(queryItems: items)
-        
-//        print("URL: \(url.absoluteString)")
 
         let data = try await sendRequest(url: url)
         
