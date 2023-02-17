@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-final class ContentViewModel: ObservableObject {
+@MainActor final class ContentViewModel: ObservableObject {
     @Published var photos: Photos?
     @Published var searchString = ""
     
@@ -27,12 +27,8 @@ final class ContentViewModel: ObservableObject {
         Task {
             do {
                 let newPhotos = try await api.searchFor(searchString: formattedSearchString).photos
-                
-                DispatchQueue.main.async {
-                    self.photos = newPhotos
-                }
-                
-//                print("NewPhotos: \(newPhotos.photo)")
+                                
+                self.photos = newPhotos
                 
             } catch {
                 print("Error: \(error)")
